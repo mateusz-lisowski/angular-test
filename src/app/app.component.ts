@@ -3,10 +3,13 @@ import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  template: `
+    Hello Universe
+  `,
+  styles: `
+    :host {
+      color: blue;
+    }
+  `,
 })
-export class AppComponent {
-  title = 'angular-test';
-}
+export class AppComponent {}
